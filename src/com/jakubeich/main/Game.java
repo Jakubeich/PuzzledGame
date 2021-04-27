@@ -24,7 +24,7 @@ public class Game extends Canvas implements Runnable{
 		this.addKeyListener(new KeyInput(handler));
 		
 		
-		new Window(WIDTH, HEIGHT, "PuzzledGame!", this);
+		new Window(WIDTH, HEIGHT, "Puzzled Game!", this);
 		
 		hud = new HUD();
 		spawner = new Spawn(handler, hud);
