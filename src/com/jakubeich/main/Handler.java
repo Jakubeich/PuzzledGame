@@ -21,6 +21,17 @@ public class Handler {
 			tempObject.render(g);
 		}
 	}
+	
+	public void clearEnemies() {
+        for (int i = 0; i < this.object.size(); i++) {
+            GameObject tempObject = this.object.get(i);
+            if (tempObject.getId() != ID.Player) {
+                this.removeObject(tempObject);
+                i--;
+            }
+        }
+    }
+	
 	public void addobject(GameObject object) {
 		this.object.add(object);
 	}
