@@ -19,7 +19,7 @@ public class EnemyBoss extends GameObject{
 		this.handler = handler;
 		
 		velX = 0;
-		velY = 2;
+		velY = 1;
 	}
 	
 	public Rectangle getBounds() {
@@ -45,7 +45,7 @@ public class EnemyBoss extends GameObject{
 			
 			velX = Game.clamp(velX, -10, 10);
 			
-			int spawn = r.nextInt(10);
+			int spawn = r.nextInt(7);
 			if(spawn == 0) handler.addobject(new EnemyBossBullet((int)x+48, (int)y+48, ID.BasicEnemy, handler));
 		}
 		
