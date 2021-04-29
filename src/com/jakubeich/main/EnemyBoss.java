@@ -47,6 +47,7 @@ public class EnemyBoss extends GameObject{
 			
 			int spawn = r.nextInt(7);
 			if(spawn == 0) handler.addobject(new EnemyBossBullet((int)x+48, (int)y+48, ID.BasicEnemy, handler));
+			if(spawn == 0) handler.addobject(new EnemyBossBullet((int)x+48, (int)y+48, ID.BasicEnemy, handler));
 		}
 		
 		//if(y <= 0 || y >= Game.HEIGHT - 32) velY *=  -1;
