@@ -85,7 +85,9 @@ public class Menu extends MouseAdapter{
 	}
 	
 	public void render(Graphics g) {
-		if(game.gameState == STATE.Menu) {
+		
+			if(game.gameState == STATE.Menu) {
+				
 			Font fnt = new Font("arial", 1, 50);
 			Font fnt2 = new Font("arial", 1, 30);
 			

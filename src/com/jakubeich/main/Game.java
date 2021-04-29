@@ -26,7 +26,7 @@ public class Game extends Canvas implements Runnable{
 		End
 	};
 	
-	public static STATE gameState = STATE.Menu;
+	public STATE gameState = STATE.Menu;
 	
 	public Game() {
 		
@@ -142,13 +142,13 @@ public class Game extends Canvas implements Runnable{
 		bs.show();
 	}
 	
-	public static float clamp(float hEALTH, int min, int max) {
-		if(hEALTH >= max)
-			return hEALTH = max;
-		else if(hEALTH <= min)
-			return hEALTH = min;
+	public static float clamp(float HEALTH, int min, int max) {
+		if(HEALTH >= max)
+			return HEALTH = max;
+		else if(HEALTH <= min)
+			return HEALTH = min;
 		else
-			return hEALTH;
+			return HEALTH;
 	}
 	
 	public static void main(String args[]) {

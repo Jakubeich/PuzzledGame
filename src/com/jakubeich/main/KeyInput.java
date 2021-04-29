@@ -2,6 +2,7 @@ package com.jakubeich.main;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+
 public class KeyInput extends KeyAdapter{
 	
 	private Handler handler;
@@ -9,7 +10,7 @@ public class KeyInput extends KeyAdapter{
 	
 	public KeyInput(Handler handler) {
 		this.handler = handler;
-		
+
 		keyDown[0]=false;
 		keyDown[1]=false;
 		keyDown[2]=false;
@@ -34,7 +35,6 @@ public class KeyInput extends KeyAdapter{
 		
 		if(key == KeyEvent.VK_ESCAPE) System.exit(1);
 		
-				
 	}
 	
 	public void keyReleased(KeyEvent e) {
