@@ -13,8 +13,6 @@ public class Game extends Canvas implements Runnable{
 	private Thread thread;
 	private boolean running = false;
 	
-	public static boolean paused = false;
-	
 	private Random r;
 	private Handler handler;
 	private HUD hud;
@@ -37,10 +35,6 @@ public class Game extends Canvas implements Runnable{
 		menu = new Menu(this, handler, hud);
 		this.addKeyListener(new KeyInput(handler));
 		this.addMouseListener(menu);
-		
-		AudioPlayer.load();
-		
-		AudioPlayer.getMusic("music").loop();
 		
 		new Window(WIDTH, HEIGHT, "Puzzled Game!", this);
 
